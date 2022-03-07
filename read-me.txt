@@ -1,0 +1,12 @@
+Please create a database named with "test_job" and import the sql file "test_job.sql" from the sql folder.
+
+Copy and paste the .env.example file with the name .env and change DB_DATABASE name from laravel to test_job.
+
+Credentials to login
+
+email -->
+admin@admin.com
+
+password-->
+123123123
+
