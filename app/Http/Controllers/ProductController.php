@@ -36,9 +36,9 @@ class ProductController extends Controller
 
     private function productImageUpload($request)
     {
-        $path      = 'storage/image/product-image';
+        $path      = 'assets/admin/assets/product-image';
         $file_name = time() . rand('00000', '99999') . '.' . $request->image->getClientOriginalExtension();
-        $request->file('image')->storeAs('public/image/product-image', $file_name);
+        $request->file('image')->move($path,$file_name);
         $fullpath = $path . '/' . $file_name;
 
         return $fullpath;
